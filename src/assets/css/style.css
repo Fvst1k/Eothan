@@ -228,7 +228,7 @@ img {
   }
 }
 
-.wrapper-tl_img {
+.wrapper-tl__img {
   height: 715px;
   position: absolute;
   z-index: 5;
@@ -236,17 +236,17 @@ img {
   right: -23.5%;
 }
 @media (max-width: 1025px) {
-  .wrapper-tl_img {
+  .wrapper-tl__img {
     right: -22%;
   }
 }
 @media (max-width: 1023px) {
-  .wrapper-tl_img {
+  .wrapper-tl__img {
     right: -60%;
   }
 }
 @media (max-width: 767px) {
-  .wrapper-tl_img {
+  .wrapper-tl__img {
     right: 1%;
     top: 66%;
     width: 180px;
@@ -1700,8 +1700,63 @@ img {
   }
 }
 
-.magic-tl__column:after {
+.celtic-magic-tl__column:after {
   background: unset;
+}
+
+.block-celtic-magic {
+  position: relative;
+  overflow: hidden;
+}
+.block-celtic-magic:after {
+  content: "";
+  background: url("../../assets/img/2.content/celtic_magic_bg_green.png") no-repeat left;
+  background-size: 130%;
+  width: 1452px;
+  height: 840px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.block-celtic-magic:before {
+  content: "";
+  background: url("../../assets/img/2.content/celtic_magic_bg_rectangle.png");
+  background-size: 15%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.celtic-magic-tl__blur {
+  width: 173px;
+  height: 173px;
+  background: rgba(91, 194, 42, 0.32);
+  filter: blur(80px);
+  position: absolute;
+}
+
+.celtic-magic-tl__blur_1 {
+  top: 7%;
+  left: 7%;
+}
+
+.celtic-magic-tl__blur_2 {
+  right: 0;
+  top: -2%;
+}
+
+.celtic-magic-tl__blur_3 {
+  top: 55%;
+  right: 0;
+}
+
+.celtic-magic-tl__blur_4 {
+  top: 30%;
+  right: 27%;
 }
 
 .block-info {
@@ -1728,7 +1783,7 @@ img {
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
   border-radius: 50%;
   background: #5BC22A;
-  box-shadow: 0px 4px 0px #449120, 0px 1px 16px #5BC22A;
+  box-shadow: 0 4px 0 #449120, 0 1px 16px #5BC22A;
   position: absolute;
   top: calc((100% - 90px) / 2);
   right: calc((100% - 90px) / 2);
@@ -1749,6 +1804,44 @@ img {
 .block-protection {
   padding: 134px 0 210px;
   background: #2e2d2d;
+  position: relative;
+}
+.block-protection:after {
+  content: "";
+  background: url("../../assets/img/2.content/block_protection_bg.png") no-repeat left;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0.1;
+}
+.block-protection:before {
+  content: "";
+  background: url("../../assets/img/2.content/celtic_magic_bg_rectangle.png");
+  background-size: 15%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.celtic-magic-tl__blur_5 {
+  width: 225px;
+  height: 225px;
+  top: 25%;
+  left: 5%;
+}
+
+.celtic-magic-tl__blur_6 {
+  width: 225px;
+  height: 225px;
+  top: 55%;
+  right: -5%;
 }
 
 .block-protection__title {
@@ -1761,6 +1854,8 @@ img {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .block-protection__article {
@@ -1786,6 +1881,61 @@ img {
 .block-price {
   padding: 100px 0 120px;
   background: #2e2d2d;
+  position: relative;
+}
+.block-price:after {
+  content: "";
+  background: url("../../assets/img/2.content/block_price_bg.png") no-repeat left;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  opacity: 0.08;
+}
+.block-price:before {
+  content: "";
+  background: url("../../assets/img/2.content/celtic_magic_bg_rectangle.png");
+  background-size: 15%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.celtic-magic-tl__blur_103 {
+  width: 150px;
+  height: 150x;
+  filter: blur(70px);
+}
+
+.celtic-magic-tl__blur_7 {
+  top: 35%;
+  left: 5%;
+}
+
+.celtic-magic-tl__blur_8 {
+  top: 10%;
+  left: 45%;
+}
+
+.celtic-magic-tl__blur_9 {
+  top: 7%;
+  right: 25%;
+}
+
+.celtic-magic-tl__blur_10 {
+  right: 10%;
+  top: 80%;
+}
+
+.celtic-magic-tl__blur_11 {
+  top: 53%;
+  left: 45%;
 }
 
 .block-price__column {
@@ -1793,6 +1943,8 @@ img {
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 .block-price__title {
@@ -1893,9 +2045,15 @@ img {
   justify-content: space-between;
 }
 
+.wrapper-tl__img_celtic-magic {
+  width: 808px;
+  height: 694px;
+}
+
 .footer {
   background: #2e2d2d;
   padding: 60px 0;
+  margin-top: -1px;
 }
 @media (max-width: 1025px) {
   .footer {
