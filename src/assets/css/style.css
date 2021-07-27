@@ -1854,6 +1854,11 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.block-info__btn:hover {
+  opacity: 0.7;
 }
 .block-info__btn br {
   display: none;
