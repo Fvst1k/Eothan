@@ -1372,7 +1372,7 @@ img {
 .wrapper-teaching-grid__road-2 {
   position: absolute;
   bottom: 333px;
-  left: calc((100% - 400px)/ 2 - -250px);
+  left: calc((100% - 400px) / 2 - -250px);
   width: 400px;
   height: 512px;
 }
@@ -1383,7 +1383,7 @@ img {
 }
 @media (max-width: 1025px) {
   .wrapper-teaching-grid__road-2 {
-    left: calc((100% - 700px)/ 2 + 370px);
+    left: calc((100% - 700px) / 2 + 370px);
     bottom: 270px;
   }
 }
@@ -2357,6 +2357,130 @@ img {
     font-size: 14px;
     margin-top: 12px;
   }
+}
+
+.block-tl-rune {
+  padding: 150px 0 350px;
+}
+
+.tl-rune__column:after {
+  display: none;
+}
+
+.wrapper-tl__img_big {
+  width: 531px;
+  position: absolute;
+  top: 30px;
+  right: calc((100% - 531px) / 2 - 683px);
+}
+.wrapper-tl__img_big .tl__first-tablet {
+  bottom: 15%;
+  right: 12%;
+  left: unset;
+}
+.wrapper-tl__img_big .tl__second-tablet {
+  z-index: 9;
+  bottom: 32px;
+  right: 18px;
+  left: unset;
+}
+
+.wrapper-tl__img_small {
+  width: 375px;
+  position: absolute;
+  height: 375px;
+  top: 267px;
+  right: calc((100% - 375px) / 2 - 481px);
+}
+.wrapper-tl__img_small .tl__first-tablet {
+  left: -9%;
+  bottom: 8%;
+}
+.wrapper-tl__img_small .tl__second-tablet {
+  z-index: 9;
+  bottom: -5%;
+  left: -1%;
+}
+
+.tl-rune__btn {
+  margin-bottom: 0;
+}
+
+.block-presenters {
+  padding: 25px 0 131px;
+}
+
+.presenters-row {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 60px;
+}
+
+.wrapper-presenters__element {
+  box-shadow: 0 2px 17px rgba(0, 0, 0, 0.18);
+  padding: 10px;
+}
+
+.presenters__element {
+  border: 1px solid rgba(147, 142, 138, 0.23);
+  border-radius: 3px;
+}
+
+.wrapper-presenters__element-img {
+  width: 194px;
+  height: 194px;
+}
+
+.presenters__element {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px 30px 20px;
+  height: 100%;
+}
+
+.presenters__element-title {
+  margin-top: 30px;
+  font-size: 20px;
+  color: #463717;
+  font-weight: 600;
+}
+
+.presenters__element-subtitle {
+  margin-top: 25px;
+  font-size: 18px;
+  color: #FFA751;
+}
+
+.presenters__element-list {
+  margin-top: 25px;
+}
+.presenters__element-list p {
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.block-course {
+  padding: 210px 0 330px;
+  background: #2e2d2d;
+  color: #FFFFFF;
+}
+
+.course-list {
+  margin-top: 85px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+}
+
+.course-list__element {
+  font-size: 18px;
+  line-height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .footer {
