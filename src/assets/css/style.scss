@@ -2349,7 +2349,30 @@
 
 //<!-- Rune --!>
 .block-tl-rune {
-  padding: 150px 0 350px;
+  padding: 0 0 350px;
+  position: relative;
+  &:before {
+    content: "";
+    background: url("../../assets/img/2.content/background_a.png") no-repeat center;
+    background-size: contain;
+    position: absolute;
+    width: 1059px;
+    height: 1126px;
+    top: -230px;
+    left: calc((100% - 1059px) / 2 - 400px);
+  }
+  &:after {
+    content: "";
+    background: url("../../assets/img/2.content/background_rune.png") no-repeat center;
+    background-size: contain;
+    width: 1057px;
+    height: 973px;
+    position: absolute;
+    transform: rotate(-5.7deg);
+    top: -80px;
+    left: calc((100% - 1057px) / 2 - 358px);
+
+  }
 }
 .tl-rune__column {
   &:after {
@@ -2400,6 +2423,32 @@
 }
 .block-presenters {
   padding: 25px 0 131px;
+  position: relative;
+  &:after {
+    content: "";
+    background: url("../../assets/img/2.content/bg_wave.svg") no-repeat center;
+    background-size: contain;
+    width: 1956px;
+    height: 301px;
+    position: absolute;
+    top: -270px;
+    left: calc((100% - 1956px) / 2 );
+    z-index: 10;
+
+  }
+  &:before {
+    content: "";
+    background: url("../../assets/img/2.content/bg_wave.svg") no-repeat center;
+    background-size: contain;
+    width: 1956px;
+    height: 301px;
+    position: absolute;
+    bottom: -180px;
+    left: calc((100% - 1956px) / 2 );
+    z-index: 10;
+    transform: rotate(180deg);
+
+  }
 }
 .presenters-row {
   display: flex;
@@ -2446,7 +2495,7 @@
   }
 }
 .block-course {
-  padding: 210px 0 330px;
+  padding: 270px 0 330px;
   background: #2e2d2d;
   color: #FFFFFF;
 }
@@ -2463,7 +2512,123 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  font-weight: 100;
+  position: relative;
+  &:after {
+    content: "";
+    background: url("../../assets/img/2.content/description_list.svg") no-repeat center;
+    background-size: contain;
+    width: 16px;
+    height: 11px;
+    position: absolute;
+    left: -25px;
+    top: 5px;
+  }
 }
+.block-price-rune {
+  background: #FFFFFF;
+  &:before {
+    display: none;
+  }
+  &:after{
+    display: none;
+  }
+}
+.block-price-rune__upper-title {
+  font-size: 34px;
+  color: #463717;
+  font-family: "Cormorant SC", serif;
+}
+.block-price-rune__title {
+  color: #463717;
+}
+.block-price-rune__under-title {
+  color: #463717;
+  font-family: "Cormorant SC", serif;
+  font-size: 30px;
+}
+.block-price-rune__tablet{
+  gap: 30px;
+}
+
+.block-price-rune__element {
+  margin-top: 70px;
+  filter: drop-shadow(0px 2px 17px rgba(0, 0, 0, 0.18));
+  padding: 40px 30px;
+  max-width: 370px;
+}
+.block-price-rune__element_big {
+  filter: drop-shadow(0px 2px 17px rgba(0, 0, 0, 0.18));
+}
+.block-price-rune__element-under-title {
+  color: #766D6D;
+  margin-top: 10px;
+  font-size: 15px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(91, 194, 42, 0.37);
+}
+.block-price__element-text {
+  font-size: 16px;
+  line-height: 22px;
+  color: #555252;
+  font-weight: 400;
+
+}
+.block-price-rune__element-last-cost {
+  font-size: 15px;
+  opacity: 24%;
+  text-decoration-line: line-through;
+}
+
+.block-price-rune__element_big {
+  filter: drop-shadow(0px 2px 17px rgba(0, 0, 0, 0.18));
+  margin-top: 70px;
+  max-width: 560px;
+  background: url("../../assets/img/2.content/price_rune_tablet_big.svg") no-repeat center;
+  &:after {
+    background: #FFA751;
+  }
+}
+.block-class-time {
+  padding: 220px 0 300px;
+  background: #2e2d2d;
+  color: #FFFFFF;
+}
+.class-time-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.class-time__magic {
+  margin-top: 60px;
+  width: 100%;
+
+}
+.class-time__magic-title {
+  font-size: 30px;
+  text-align: center;
+}
+.class-time__magic-row {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.wrapper-class-time__magic-img {
+  max-width: 460px;
+  width: 100%;
+  height: 430px;
+  padding: 60px 57px 50px 57px;
+  background: url("../../assets/img/2.content/class_time_tablet_bg.svg")no-repeat center;
+  background-size: contain;
+}
+.class-time-footer {
+  margin-top: 75px;
+  font-size: 25px;
+}
+
 
 //<!-- /Rune --!>
 
