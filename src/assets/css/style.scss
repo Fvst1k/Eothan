@@ -1234,6 +1234,9 @@
   }
 
 }
+.block-teaching {
+  position: relative;
+}
 
 .teaching-column {
   display: flex;
@@ -1241,6 +1244,7 @@
   align-items: center;
   padding: 90px 0 135px;
   position: relative;
+  z-index: 11;
   @media (max-width: 1025px) {
     padding: 60px 0 40px;
 
@@ -2066,7 +2070,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  z-index: 2;
+  z-index: 11;
 }
 
 .block-price__title {
@@ -2349,7 +2353,7 @@
 
 //<!-- Rune --!>
 .block-tl-rune {
-  padding: 0 0 350px;
+  padding: 0 0 240px;
   position: relative;
   &:before {
     content: "";
@@ -2424,31 +2428,36 @@
 .block-presenters {
   padding: 25px 0 131px;
   position: relative;
-  &:after {
+}
+.wave-up {
     content: "";
     background: url("../../assets/img/2.content/bg_wave.svg") no-repeat center;
     background-size: contain;
     width: 1956px;
     height: 301px;
     position: absolute;
-    top: -270px;
+    top: -170px;
     left: calc((100% - 1956px) / 2 );
     z-index: 10;
 
   }
-  &:before {
+.wave-down{
     content: "";
     background: url("../../assets/img/2.content/bg_wave.svg") no-repeat center;
     background-size: contain;
     width: 1956px;
     height: 301px;
     position: absolute;
-    bottom: -180px;
+    bottom: -150px;
     left: calc((100% - 1956px) / 2 );
     z-index: 10;
-    transform: rotate(180deg);
+    transform: scale(1, -1);
 
-  }
+}
+
+.presenters-column {
+  position: relative;
+  z-index: 11;
 }
 .presenters-row {
   display: flex;
@@ -2498,6 +2507,19 @@
   padding: 270px 0 330px;
   background: #2e2d2d;
   color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+  &:before {
+    content: "";
+    background: url("../../assets/img/2.content/background_a.png") no-repeat center;
+    background-size: contain;
+    position: absolute;
+    width: 1335px;
+    height: 1312px;
+    top: -790px;
+    right: calc((100% - 1059px) / 2 - 700px);
+  }
+
 }
 .course-list {
   margin-top: 85px;
@@ -2527,13 +2549,31 @@
 }
 .block-price-rune {
   background: #FFFFFF;
-  &:before {
-    display: none;
-  }
+  position: relative;
+  padding: 0 0 180px;
+
   &:after{
     display: none;
   }
+  &:before {
+    display: none;
+  }
 }
+.block-price-rune__column {
+  &:before {
+    content: "";
+    background: url("../../assets/img/2.content/background_a.png") no-repeat center;
+    background-size: contain;
+    position: absolute;
+    width: 1146px;
+    height: 1312px;
+    top: 100px;
+    right: calc((100% - 1146px) / 2);
+    opacity: 0.1 ;
+  }
+}
+
+
 .block-price-rune__upper-title {
   font-size: 34px;
   color: #463717;
@@ -2590,15 +2630,29 @@
   }
 }
 .block-class-time {
-  padding: 220px 0 300px;
+  padding: 220px 0 250px;
   background: #2e2d2d;
   color: #FFFFFF;
+  position: relative;
+  &:before {
+    content: "";
+    background: url("../../assets/img/2.content/background_rune.png") no-repeat center;
+    background-size: contain;
+    position: absolute;
+    width: 1363px;
+    height: 1255px;
+    top: calc((100% - 1255px) / 2);
+    right: calc((100% - 1363px) / 2);
+
+  }
 }
 .class-time-column {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column;
+  position: relative;
+  z-index: 1;
 }
 .class-time__magic {
   margin-top: 60px;
@@ -2627,6 +2681,29 @@
 .class-time-footer {
   margin-top: 75px;
   font-size: 25px;
+}
+.block-certificate-rune {
+  background: #FFFFFF;
+  padding: 0 0 20px;
+}
+.certificate-rune-column {
+  background: none;
+  padding-bottom: 0;
+  z-index: 11;
+  position: relative;
+}
+.certificate-rune-title {
+  color: #000000;
+}
+.wrapper-certificate-rune__img {
+  width: 582px;
+  height: 816px;
+}
+.block-bg-grey {
+  height: 170px;
+  width: 100%;
+  background: #2e2d2d;
+  position: relative;
 }
 
 
