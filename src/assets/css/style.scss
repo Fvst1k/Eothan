@@ -48,6 +48,29 @@
 
 }
 
+.pattern__btn_alchemy {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(360deg, #FABF66 0%, #F8D55B 100%);
+  box-shadow: 0 4px 0 #E2A949;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 70px;
+  color: #3F3C3C;
+  cursor: pointer;
+  transition: ease-in-out all 0.3s;
+  font-size: 20px;
+  font-weight: 600;
+  &:hover {
+    opacity: 0.7;
+  }
+
+
+
+}
+
 
 //<!-- /pattern --!>
 
@@ -3658,6 +3681,272 @@
   padding-bottom: 90px;
 }
 //<!-- /Master --!>
+
+//<!-- Alchemy --!>
+.bg-star {
+  background: url("../../assets/img/2.content/alchemy_star.svg") no-repeat center;
+  background-size: contain;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+
+}
+.bg-star_1 {
+  bottom: 20%;
+  left: 43%;
+}
+.bg-star_2 {
+  top: 28%;
+  right: 17.5%;
+}
+.block-tl-alchemy {
+  background: url("../../assets/img/2.content/alchemy_bg.png") no-repeat center;
+  background-size: cover;
+  padding: 200px 0 250px;
+  overflow: hidden;
+  position: relative;
+  &:after {
+    content: "";
+    background: url("../../assets/img/2.content/background_a.png ") no-repeat center;
+    background-size: contain;
+    width: 874px;
+    height: 929px;
+    position: absolute;
+    top: -270px;
+    right: calc((100% - 874px) / 2 - 600px);
+    opacity: 0.6;
+
+  }
+}
+.tl-alchemy__under-title {
+  font-size: 34px;
+  font-weight: 100;
+}
+.tl-alchemy__column {
+  padding: 0;
+  min-height: unset;
+  position: relative;
+  z-index: 2;
+  &:after {
+    width: 670px;
+    height: 350px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 30%;
+    clip-path: unset;
+    background: #92704E;
+    filter: blur(121px);
+    z-index: -1;
+  }
+
+}
+.tl-alchemy__btn {
+  margin-bottom: 0;
+  max-width: 310px;
+  width: 100%;
+
+}
+.tl-alchemy__title {
+  font-size: 65px;
+  color: #F8D55B;
+  position: relative;
+  &:after {
+    content: "";
+    background: url("../../assets/img/2.content/alchemy_star.svg") no-repeat center;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+   left: -100px;
+
+  }
+}
+.wrapper-tl-alchemy__img {
+  width: 533px;
+  height: 867px;
+  bottom: unset;
+  top: -80px;
+  right: calc((100% - 533px)/ 2 - 400px);
+
+}
+.block-schedule-alchemy {
+  background: #FFFFFF;
+}
+.schedule-alchemy-title {
+  color: #000000;
+}
+.schedule-day-alchemy {
+  margin-top: 50px;
+}
+.schedule-day-alchemy__row {
+  padding: 30px 40px 30px 20px ;
+}
+.schedule-day-alchemy__date {
+  & span {
+    color: #F8D55B;
+  }
+}
+.schedule-day-alchemy__info {
+  & span {
+    font-weight: 400;
+    color: #000000;
+  }
+}
+.schedule-day-alchemy__btn {
+  width: 287px;
+  margin-top: 60px;
+
+}
+.schedule-alchemy-column {
+  padding: 100px 0 10px ;
+}
+.gifts-alchemy-img {
+  background: #F8D55B;
+}
+.block-access {
+  background: url("../../assets/img/2.content/alchemy_bg.png") no-repeat center;
+  background-size: 100%;
+  padding: 120px 0;
+  position: relative;
+  &:after {
+    content: "";
+    background: url("../../assets/img/2.content/background_a.png ") no-repeat center;
+    background-size: contain;
+    width: 744px;
+    height: 723px;
+    position: absolute;
+    bottom: -70px;
+    right: calc((100% - 744px) / 2 - 615px);
+    opacity: 0.6;
+  }
+
+}
+.access-column {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  &:after {
+    content: "";
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: calc((100% - 350px) / 2);
+    border-radius: 30%;
+    background: #92704E;
+    filter: blur(71px);
+    z-index: -1;
+  }
+}
+.access-title {
+  width: 60%;
+  color: #FFFFFF;
+  opacity: 0.7;
+}
+.access-subtitle {
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: 100;
+  text-align: center;
+  & p {
+    margin-top: 30px;
+  }
+  & span {
+    font-weight: 400;
+    opacity: 0.8;
+  }
+  & p:last-child span {
+    color:#F8D55B;
+  }
+}
+.access-row {
+  margin-top: 60px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.access-row__list {
+  font-size: 20px;
+  font-weight: 100;
+  color: #FFFFFF;
+  width: 50%;
+  position: relative;
+  z-index: 1;
+  &:after {
+    content: "";
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 30%;
+    background: #92704E;
+    filter: blur(121px);
+    z-index: -1;
+  }
+  & span {
+    font-size: 25px;
+    color:#F8D55B;
+
+  }
+  & p {
+    margin-top: 23px;
+
+  }
+  & p:nth-child(1){
+    margin-top: 0;
+
+  }
+
+}
+.access-row__form {
+  padding: 43px 60px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 25px rgba(70, 68, 68, 0.22);
+  border-radius: 3px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  width: 100%;
+}
+.access-row__form-title {
+  font-size: 25px;
+  color: #000000;
+  margin-bottom: 13px;
+
+}
+.access-row__form-input {
+  margin-top: 22px;
+  width: 100%;
+  background: rgba(196, 196, 196, 0.45);
+  border-radius: 5px;
+  padding: 24px 0 24px 24px;
+  color: #555252;
+  font-size: 18px;
+  &::placeholder {
+    color: #463717;
+    opacity: 0.6;
+    font-size: 18px;
+
+  }
+
+}
+.access-row__form-btn {
+  margin-top: 22px;
+  width: 100%;
+}
+
+
+
+//<!-- /Alchemy --!>
 
 //@import "slider";
 @import "footer";
