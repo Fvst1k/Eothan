@@ -113,3 +113,13 @@
   background: url("../../assets/img/2.content/background_sybmol.png ") no-repeat center;
   background-size: 100%;
 }
+.footer-alchemy {
+  background: #FFFFFF;
+
+}
+.footer-element-alchemy {
+  & a {
+  color: #000000;
+    font-weight: 400;
+}
+}
