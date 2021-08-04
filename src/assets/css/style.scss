@@ -57,7 +57,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 70px;
+  height: 64px;
   color: #3F3C3C;
   cursor: pointer;
   transition: ease-in-out all 0.3s;
@@ -4039,7 +4039,6 @@
     bottom: 0;
     left: 0;
     top: unset;
-
     filter: blur(50px);
     z-index: 1;
   }
@@ -4335,8 +4334,206 @@
   right: calc((100% - 90px) / 2 - 550px);
 }
 
-
 //<!-- /Alchemy --!>
+
+//<!-- Immortality --!>
+
+
+
+.block-tl-immortality {
+  padding: 240px 0 180px;
+  background: #7B6752;
+  position: relative;
+
+}
+.immortality-blur {
+  width: 141px;
+  height: 141px;
+  background: #FED754;
+  border-radius: 50%;
+  filter: blur(105px);
+  position: absolute;
+
+}
+.immortality-blur_1 {
+  top: 0;
+  left: 0;
+
+}
+.immortality-blur_2 {
+  top: 50%;
+  left: 0;
+
+}
+
+.immortality-blur_3 {
+  top: 7%;
+  left: 45%;
+  width: 80px;
+  height: 80px;
+  filter: blur(70px);
+
+
+
+}
+
+.tl-immortality__column {
+  padding: 0;
+  &:after {
+    display: none;
+  }
+}
+.tl-immortality__title {
+  font-size: 69px;
+  line-height: 83px;
+  color: #F8D55B;
+  max-width: 600px;
+  width: 100%;
+  position: relative;
+  &:after {
+    content: "";
+    background: url("../../assets/img/2.content/alchemy_star.svg") no-repeat center;
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 2px;
+    left: -100px;
+  }
+
+}
+.tl-immortality__btn {
+  width: 286px;
+  margin-bottom: 0;
+
+}
+.wrapper-tl-immortality__img {
+  width: 638px;
+  height: 636px;
+bottom: unset;
+  right: calc((100% - 753px)/ 2 - 252px);
+  top: -60px;
+}
+.block-info-immortality {
+  position: relative;
+  &:after {
+    content: "";
+    background: url("../../assets/img/2.content/immortality_block_decoration_1.svg") no-repeat center;
+    background-size: cover;
+    width: 1440px;
+    height: 223px;
+    position: absolute;
+    top: -221px;
+    right: calc((100% - 1440px) / 2);
+    z-index: 10;
+
+
+  }
+}
+.block-info-immortality {
+  padding: 100px 0;
+}
+.block-info-immortality__btn {
+  background: linear-gradient(360deg, #FABF66 0%, #F8D55B 100%);
+  box-shadow: 0 4px 0 #E0A744, 0 1px 16px #F9CE5F;
+}
+.block-teaching-immortality {
+  position: relative;
+  &:after {
+    content: "";
+    background: url("../../assets/img/2.content/immortality_block_decoration_1.svg") no-repeat center;
+    background-size: cover;
+    width: 1440px;
+    height: 223px;
+    position: absolute;
+    bottom: -221px;
+    right: calc((100% - 1440px) / 2);
+    z-index: 10;
+    transform: rotate(180deg);
+  }
+
+}
+.block-price-immortality {
+  padding: 350px 0 150px;
+  background: #7B6752;
+  position: relative;
+  &:after{
+    display: none;
+  }
+  &:before{
+    display: none;
+  }
+}
+.immortality-price-title {
+  color: #FFFFFF;
+}
+.block-price-immortality__element {
+  background: url("../../assets/img/2.content/immortality_tablet.svg ") no-repeat center;
+  background-size: cover;
+  position: relative;
+}
+.block-price-immortality__element-under-title {
+  width: 100%;
+}
+.block-price-immortality__element-text-title {
+  & p:nth-child(1) {
+    font-weight: 400;
+  }
+  & p:nth-child(2) {
+    margin-top: 10px;
+
+  }
+
+}
+.block-price-immortality__column {
+  position: relative;
+  z-index: 2;
+  &:after {
+    content: "";
+    background: url("../../assets/img/2.content/immortality_tablet_decoration.svg") no-repeat center;
+    background-size: contain;
+    width: 740px;
+    height: 425px;
+    position: absolute;
+    right: calc((100% - 740px) / 2);
+    top: 150px;
+    z-index: -1;
+  }
+}
+.immortality-blur_4 {
+  top: 60%;
+  left: 0;
+}
+.immortality-blur_5 {
+  left: 40%;
+  top: 20%;
+}
+.immortality-blur_6{
+  right: 8%;
+  top: 25%;
+}
+.immortality-blur_7 {
+  bottom: 0;
+  right: calc((100% - 90px) / 2);
+}
+.bg-star_7 {
+  top: 15%;
+  right: 10%;
+}
+.bg-star_8 {
+  bottom: 30%;
+  right: 13%;
+}
+.bg-star_9 {
+  left: 10%;
+  top: 40%;
+}
+
+
+
+
+
+//<!-- /Immortality --!>
 
 //@import "slider";
 @import "footer";
