@@ -4860,9 +4860,18 @@
 
 
 .block-tl-immortality {
-  padding: 240px 0 180px;
+  padding: 220px 0 410px;
   background: #7B6752;
   position: relative;
+  @media (max-width: 1025px) {
+    padding: 170px 0 350px;
+
+  }
+  @media (max-width: 767px) {
+    padding: 60px 0 90px;
+
+
+  }
 
 }
 
@@ -4873,6 +4882,12 @@
   border-radius: 50%;
   filter: blur(105px);
   position: absolute;
+  @media (max-width: 767px) {
+    width: 40px;
+    height: 40px;
+    filter: blur(40px);
+
+  }
 
 }
 
@@ -4894,15 +4909,31 @@
   width: 80px;
   height: 80px;
   filter: blur(70px);
+  @media (max-width: 767px) {
+    display: none;
+
+  }
 
 
 }
 
 .tl-immortality__column {
   padding: 0;
+  min-height: unset;
 
   &:after {
     display: none;
+  }
+
+  @media (max-width: 1025px) {
+    margin-left: 40px;
+
+
+  }
+  @media (max-width: 767px) {
+    padding-top: 0;
+    margin-left: unset;
+
   }
 }
 
@@ -4925,11 +4956,55 @@
     left: -100px;
   }
 
+  @media (max-width: 1025px) {
+    font-size: 50px;
+    line-height: 60px;
+    &:after {
+      width: 40px;
+      height: 40px;
+      top: 11px;
+      left: -50px;
+
+    }
+  }
+  @media (max-width: 767px) {
+    font-size: 25px;
+    line-height: 30px;
+    width: 100%;
+    letter-spacing: 0.1px;
+    &:after {
+      width: 30px;
+      height: 30px;
+      top: 0px;
+      left: 15px;
+
+    }
+    & br {
+      display: none;
+    }
+
+  }
+
+}
+
+.tl-alchemy__text {
+  @media (max-width: 767px) {
+
+    font-size: 15px;
+  }
 }
 
 .tl-immortality__btn {
   width: 286px;
   margin-bottom: 0;
+  @media (max-width: 1025px) {
+    font-size: 16px;
+
+  }
+  @media (max-width: 767px) {
+    width: 224px;
+
+  }
 
 }
 
@@ -4939,10 +5014,26 @@
   bottom: unset;
   right: calc((100% - 753px) / 2 - 252px);
   top: -60px;
+  @media (max-width: 1025px) {
+    width: 520px;
+    height: 500px;
+    right: calc((100% - 500px) / 2 - 252px);
+  }
+  @media (max-width: 767px) {
+    width: 262px;
+    height: 251px;
+    right: calc((100% - 262px) / 2);
+    top: 47%;
+
+  }
 }
 
 .block-info-immortality {
   position: relative;
+  @media (max-width: 767px) {
+    padding: 60px 0 30px;
+
+  }
 
   &:after {
     content: "";
@@ -4951,11 +5042,22 @@
     width: 1440px;
     height: 223px;
     position: absolute;
-    top: -221px;
-    right: calc((100% - 1440px) / 2);
+    top: -24%;
+    left: 50%;
+    transform: translate(-50%, 0);
     z-index: 10;
+    @media (max-width: 1025px) {
+      width: 1025px;
+      height: 160px;
+      top: -21%;
+    }
+    @media (max-width: 767px) {
+      width: 320px;
+      height: 50px;
+      top: -14%;
 
 
+    }
   }
 }
 
@@ -4978,16 +5080,28 @@
     width: 1440px;
     height: 223px;
     position: absolute;
-    bottom: -221px;
-    right: calc((100% - 1440px) / 2);
+    bottom: -8%;
+    left: 50%;
     z-index: 10;
-    transform: rotate(180deg);
+    transform: translate(-50%, 0) rotate(180deg);
+    @media (max-width: 1025px) {
+      width: 1025px;
+      height: 160px;
+
+    }
+    @media (max-width: 767px) {
+      width: 320px;
+      height: 50px;
+      bottom: -5%;
+
+
+    }
   }
 
 }
 
 .block-price-immortality {
-  padding: 350px 0 150px;
+  padding: 260px 0 100px;
   background: #7B6752;
   position: relative;
 
@@ -4997,6 +5111,15 @@
 
   &:before {
     display: none;
+  }
+
+  @media (max-width: 1025px) {
+    padding: 220px 0 100px;
+
+  }
+  @media (max-width: 767px) {
+    padding: 100px 0 80px;
+
   }
 }
 
@@ -5008,6 +5131,28 @@
   background: url("../../assets/img/2.content/immortality_tablet.svg ") no-repeat center;
   background-size: cover;
   position: relative;
+  height: 680px;
+  @media (max-width: 1105px) {
+    padding: 40px 35px;
+
+  }
+  @media (max-width: 1055px) {
+    padding: 40px 35px;
+
+
+  }
+  @media (max-width: 1040px) {
+    padding: 40px 35px;
+
+  }
+  @media (max-width: 1025px) {
+    width: 300px;
+  }
+  @media (max-width: 767px) {
+    height: 580px;
+
+  }
+
 }
 
 .block-price-immortality__element-under-title {
@@ -5040,7 +5185,15 @@
     right: calc((100% - 740px) / 2);
     top: 150px;
     z-index: -1;
+    @media (max-width: 767px) {
+      right: calc((100% - 600px)/ 2);
+      width: 600px;
+      top: 100px;
+
+
+    }
   }
+
 }
 
 .immortality-blur_4 {
