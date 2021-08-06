@@ -76,6 +76,12 @@
 
 }
 
+.pattern__btn_cosmogony {
+  color: #FFFFFF;
+  background: linear-gradient(360deg, #4767BD 0%, #80A3FF 100%);
+  box-shadow: unset;
+}
+
 
 //<!-- /pattern --!>
 
@@ -4975,7 +4981,7 @@
     &:after {
       width: 30px;
       height: 30px;
-      top: 0px;
+      top: 0;
       left: 15px;
 
     }
@@ -5186,7 +5192,7 @@
     top: 150px;
     z-index: -1;
     @media (max-width: 767px) {
-      right: calc((100% - 600px)/ 2);
+      right: calc((100% - 600px) / 2);
       width: 600px;
       top: 100px;
 
@@ -5234,6 +5240,316 @@
 
 //<!-- /Immortality --!>
 
+//<!-- Cosmogony --!>
+.block-tl-cosmogony {
+  background: #3E3C3B;
+  padding: 250px 0 550px;
+
+  & .tl__title {
+    color: #80A3FF;
+    font-size: 85px;
+  }
+
+  & .bg-rectangle {
+    z-index: -1;
+  }
+
+  & .wrapper-tl-immortality__img {
+    top: -120px;
+  }
+  & .pattern__btn_cosmogony {
+    max-width: 290px;
+
+  }
+
+}
+
+.cosmogony-ellipse {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  position: absolute;
+}
+
+.cosmogony-ellipse_1 {
+  top: 7%;
+  right: calc((100% - 7px) / 2 + 500px);
+}
+
+.cosmogony-ellipse_2 {
+  top: 10%;
+  right: calc((100% - 7px) / 2 + 100px);
+}
+
+.cosmogony-ellipse_3 {
+  top: 7%;
+  right: calc((100% - 7px) / 2 - 500px);
+}
+
+.cosmogony-ellipse_4 {
+  top: 35%;
+  right: calc((100% - 7px) / 2 + 660px);
+}
+
+.cosmogony-ellipse_5 {
+  bottom: 25%;
+  right: calc((100% - 7px) / 2 + 640px);
+}
+
+.cosmogony-ellipse_6 {
+  bottom: 35%;
+  right: calc((100% - 7px) / 2 + 240px);
+}
+
+.cosmogony-ellipse_7 {
+  bottom: 20%;
+  right: calc((100% - 7px) / 2 - 640px);
+}
+
+.cosmogony-blur {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(180deg, rgba(128, 163, 255, 0.6) 0%, rgba(237, 128, 255, 0.6) 100%);
+  filter: blur(125px);
+  position: absolute;
+}
+
+.cosmogony-blur_1 {
+  left: 0;
+  top: 0;
+}
+
+.cosmogony-blur_2 {
+  left: 0;
+  bottom: 25%;
+}
+
+.cosmogony-blur_3 {
+  top: 0;
+  right: 40%;
+}
+
+.block-info-cosmogony {
+  &:after {
+    top: -26%;
+  }
+
+  & .block-info__btn {
+    background: #80A3FF;
+    border: 1px solid rgba(128, 163, 255, 0.5);
+    box-shadow: 0 4px 0 #6682CB, 0 1px 16px #80A3FF;
+
+    &:after {
+      margin-left: 10px;
+    }
+  }
+}
+
+.block-teaching-cosmogony {
+  position: relative;
+
+  & .teaching-grid__road-1 {
+    background: #80A3FF;
+  }
+
+  & .teaching-grid__road-2 {
+    background: #80A3FF;
+  }
+
+  & .teaching-alchemy-tablet__btn {
+    background: rgba(128, 163, 255, 0.2);
+  }
+
+  & .teaching-tablet__btn-ellipse {
+    background: #80A3FF;
+  }
+
+  &:after {
+    bottom: -10%;
+  }
+}
+
+.block-cosmogony-price {
+  padding: 300px 0 100px;
+  background: #3E3C3B;
+  position: relative;
+  z-index: 1;
+  & .bg-rectangle {
+    z-index: -1;
+  }
+  & .bg-star {
+    width: 60px;
+    height: 60px;
+  }
+  & .bg-star_10 {
+    top: 7%;
+    left: calc((100% - 60px) / 2 - 600px);
+  }
+  & .bg-star_11 {
+    top: 13%;
+    right: calc((100% - 60px) / 2 - 500px);
+  }
+  & .bg-star_12 {
+    bottom: 45%;
+    left: calc((100% - 60px) / 2 - 620px);
+  }
+  & .bg-star_13 {
+    bottom: 30%;
+    right: calc((100% - 60px) / 2 - 520px);
+  }
+}
+.cosmogony-blur_4 {
+  top: 10%;
+  right: calc((100% - 150px) / 2);
+}
+.cosmogony-blur_5 {
+  top: 20%;
+  right: calc((100% - 150px) / 2 - 500px);
+}
+.cosmogony-blur_6 {
+  top: calc((100% - 150px) / 2);
+  right: calc((100% - 150px) / 2 );
+}
+.cosmogony-blur_7 {
+  bottom: 25%;
+  left: calc((100% - 150px) / 2 - 500px);
+}
+.cosmogony-blur_8 {
+  top: 20%;
+  left: calc((100% - 150px) / 2 - 500px);
+}
+.cosmogony-blur_9 {
+  bottom: 30%;
+  right: calc((100% - 150px) / 2 - 500px);
+}
+
+.block-cosmogony-price__column {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.cosmogony-prise_subtitle {
+  margin-top: 35px;
+  color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  & p {
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 100;
+    text-align: center;
+    max-width: 460px;
+
+
+  }
+}
+
+.block-cosmogony-price__row {
+  margin-top: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.block-cosmogony-price__tablet {
+  background: url("../../assets/img/2.content/cosmogony_tablet.svg") no-repeat center;
+  background-size: cover;
+  padding: 45px 45px 40px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 380px;
+  width: 100%;
+
+
+}
+
+.block-cosmogony-price__tablet-title {
+  font-size: 28px;
+  color: #555252;
+  font-weight: 600;
+}
+
+.block-cosmogony-price__tablet-subtitle {
+  font-size: 20px;
+  line-height: 24px;
+  color: #766D6D;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.block-cosmogony-price__tablet-cost {
+  font-size: 42px;
+  color: #555252;
+  margin-top: 30px;
+}
+
+.pattern__btn_cosmogony {
+  width: 100%;
+  margin-top: 35px;
+  font-weight: 400;
+  filter: drop-shadow(0px 4px 0px #3B5CAF) drop-shadow(0px 1px 32px rgba(91, 124, 212, 0.4));
+}
+.block-cosmogony-price__row_2 {
+  margin: 70px auto 0;
+  width: 68%;
+
+}
+.block-cosmogony-price__subscription {
+  margin-top: 100px;
+}
+.cosmogony-ellipse_8 {
+  top: 5%;
+  left: calc((100% - 7px) / 2 - 650px);
+}
+.cosmogony-ellipse_9 {
+  top: 17%;
+  left: calc((100% - 7px) / 2 - 300px);
+}
+.cosmogony-ellipse_10 {
+  top: 10%;
+  right: calc((100% - 7px) / 2 - 650px);
+}
+.cosmogony-ellipse_11 {
+  top: 27%;
+  left: calc((100% - 7px) / 2 - 670px);
+}
+.cosmogony-ellipse_12 {
+  top: 45%;
+  right: calc((100% - 7px) / 2 - 550px);
+}
+.cosmogony-ellipse_13 {
+  top: 62%;
+  right: calc((100% - 7px) / 2 - 550px);
+}
+.cosmogony-ellipse_14 {
+  top: 68%;
+  left: calc((100% - 7px) / 2 - 300px);
+}
+.cosmogony-ellipse_15 {
+  top: 85%;
+  left: calc((100% - 7px) / 2 - 670px);
+}
+.cosmogony-ellipse_16 {
+  bottom: 15%;
+  right: calc((100% - 7px) / 2 - 640px);
+}
+.cosmogony-ellipse_17 {
+  bottom: 3%;
+  left: calc((100% - 7px) / 2 - 100px);
+}
+
+
+
+//<!-- /Cosmogony --!>
 //@import "slider";
 @import "footer";
 @import "popups";
