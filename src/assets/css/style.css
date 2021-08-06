@@ -5535,6 +5535,11 @@ img {
 .block-cosmogony-price__subscription {
   margin-top: 100px;
 }
+@media (max-width: 1160px) {
+  .block-cosmogony-price__subscription .block-cosmogony-price__tablet {
+    padding: 45px 22px 45px;
+  }
+}
 @media (max-width: 767px) {
   .block-cosmogony-price__subscription {
     margin-top: 60px;
