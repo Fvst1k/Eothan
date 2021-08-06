@@ -5179,14 +5179,54 @@ img {
   color: #80A3FF;
   font-size: 85px;
 }
+@media (max-width: 1040px) {
+  .block-tl-cosmogony .tl__title {
+    font-size: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .block-tl-cosmogony .tl__title {
+    font-size: 35px;
+    text-align: right;
+  }
+}
+@media (max-width: 767px) {
+  .block-tl-cosmogony .tl__title:after {
+    left: 2px;
+  }
+}
 .block-tl-cosmogony .bg-rectangle {
   z-index: -1;
 }
 .block-tl-cosmogony .wrapper-tl-immortality__img {
   top: -120px;
 }
+@media (max-width: 1025px) {
+  .block-tl-cosmogony .wrapper-tl-immortality__img {
+    width: 452px;
+    height: 433px;
+    top: -60px;
+  }
+}
+@media (max-width: 767px) {
+  .block-tl-cosmogony .wrapper-tl-immortality__img {
+    width: 262px;
+    height: 294px;
+    top: 220px;
+  }
+}
 .block-tl-cosmogony .pattern__btn_cosmogony {
   max-width: 290px;
+}
+.block-tl-cosmogony .tl-alchemy__text {
+  font-size: 25px;
+}
+@media (max-width: 767px) {
+  .block-tl-cosmogony .tl-alchemy__text {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 15px;
+  }
 }
 
 .cosmogony-ellipse {
@@ -5195,6 +5235,11 @@ img {
   border-radius: 50%;
   background: #FFFFFF;
   position: absolute;
+}
+@media (max-width: 767px) {
+  .cosmogony-ellipse {
+    display: none;
+  }
 }
 
 .cosmogony-ellipse_1 {
@@ -5239,6 +5284,13 @@ img {
   filter: blur(125px);
   position: absolute;
 }
+@media (max-width: 767px) {
+  .cosmogony-blur {
+    width: 40px;
+    height: 40px;
+    filter: blur(40px);
+  }
+}
 
 .cosmogony-blur_1 {
   left: 0;
@@ -5266,6 +5318,11 @@ img {
 .block-info-cosmogony .block-info__btn:after {
   margin-left: 10px;
 }
+@media (max-width: 767px) {
+  .block-info-cosmogony .block-info__btn:after {
+    margin-left: unset;
+  }
+}
 
 .block-teaching-cosmogony {
   position: relative;
@@ -5285,7 +5342,11 @@ img {
 .block-teaching-cosmogony:after {
   bottom: -10%;
 }
-
+@media (max-width: 1060px) {
+  .block-teaching-cosmogony:after {
+    bottom: -8%;
+  }
+}
 .block-cosmogony-price {
   padding: 300px 0 100px;
   background: #3E3C3B;
@@ -5315,6 +5376,11 @@ img {
   bottom: 30%;
   right: calc((100% - 60px) / 2 - 520px);
 }
+@media (max-width: 767px) {
+  .block-cosmogony-price {
+    padding: 90px 0 40px;
+  }
+}
 
 .cosmogony-blur_4 {
   top: 10%;
@@ -5328,7 +5394,7 @@ img {
 
 .cosmogony-blur_6 {
   top: calc((100% - 150px) / 2);
-  right: calc((100% - 150px) / 2 );
+  right: calc((100% - 150px) / 2);
 }
 
 .cosmogony-blur_7 {
@@ -5369,12 +5435,27 @@ img {
   text-align: center;
   max-width: 460px;
 }
+@media (max-width: 767px) {
+  .cosmogony-prise_subtitle {
+    margin-top: 20px;
+  }
+  .cosmogony-prise_subtitle p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
 
 .block-cosmogony-price__row {
   margin-top: 65px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+@media (max-width: 1023px) {
+  .block-cosmogony-price__row {
+    margin-top: 0;
+    flex-flow: column;
+  }
 }
 
 .block-cosmogony-price__tablet {
@@ -5387,12 +5468,24 @@ img {
   align-items: center;
   max-width: 380px;
   width: 100%;
+  margin: 0 8px;
+}
+@media (max-width: 1023px) {
+  .block-cosmogony-price__tablet {
+    margin-top: 30px;
+    padding: 40px 35px;
+  }
 }
 
 .block-cosmogony-price__tablet-title {
   font-size: 28px;
   color: #555252;
   font-weight: 600;
+}
+@media (max-width: 1025px) {
+  .block-cosmogony-price__tablet-title {
+    font-size: 21px;
+  }
 }
 
 .block-cosmogony-price__tablet-subtitle {
@@ -5402,11 +5495,24 @@ img {
   margin-top: 30px;
   text-align: center;
 }
+@media (max-width: 1025px) {
+  .block-cosmogony-price__tablet-subtitle {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
 
 .block-cosmogony-price__tablet-cost {
   font-size: 42px;
   color: #555252;
   margin-top: 30px;
+}
+@media (max-width: 1025px) {
+  .block-cosmogony-price__tablet-cost {
+    margin-top: 20px;
+    font-size: 32px;
+  }
 }
 
 .pattern__btn_cosmogony {
@@ -5420,9 +5526,19 @@ img {
   margin: 70px auto 0;
   width: 68%;
 }
+@media (max-width: 1025px) {
+  .block-cosmogony-price__row_2 {
+    width: 100%;
+  }
+}
 
 .block-cosmogony-price__subscription {
   margin-top: 100px;
+}
+@media (max-width: 767px) {
+  .block-cosmogony-price__subscription {
+    margin-top: 60px;
+  }
 }
 
 .cosmogony-ellipse_8 {
@@ -5473,6 +5589,14 @@ img {
 .cosmogony-ellipse_17 {
   bottom: 3%;
   left: calc((100% - 7px) / 2 - 100px);
+}
+
+.block-cosmogony-price__course {
+  width: 100%;
+}
+
+.block-cosmogony-price__subscription {
+  width: 100%;
 }
 
 .footer {
