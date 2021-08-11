@@ -1,12 +1,12 @@
 .footer {
-  background: #2e2d2d;
   padding: 60px 0;
   margin-top: -1px;
   position: relative;
+  background: #343333;
+
   @media (max-width: 1025px) {
     padding: 30px 0;
   }
-
 }
 
 .footer-grid {
@@ -78,6 +78,7 @@
 
   }
 }
+
 .footer-element_2-mb {
   display: none;
   @media (max-width: 767px) {
@@ -113,13 +114,15 @@
   background: url("../../assets/img/2.content/background_sybmol.png ") no-repeat center;
   background-size: 100%;
 }
+
 .footer-alchemy {
   background: #FFFFFF;
 
 }
+
 .footer-element-alchemy {
   & a {
-  color: #000000;
+    color: #000000;
     font-weight: 400;
-}
+  }
 }
